@@ -1,0 +1,538 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      
+      <meta xmlns:html="http://www.w3.org/1999/xhtml" http-equiv="X-UA-Compatible" content="IE=edge" />
+      
+      <meta xmlns:html="http://www.w3.org/1999/xhtml" http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      
+      <title xmlns:html="http://www.w3.org/1999/xhtml">Pozor na prázdné buňky -  - HTML5</title>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+      <link rel="home" href="index.html" title="HTML5" />
+      <link rel="up" href="tabulky-zaklady.html" title="Základy tabulek" />
+      <link rel="prev" href="tabulky-bunka-barva.html" title="Barva buněk" />
+      <link rel="next" href="tabulky-rozsireny-model.html" title="Rozšířený model tabulek" />
+      <meta xmlns:html="http://www.w3.org/1999/xhtml" name="Section-title" content="Pozor na prázdné buňky" /><script xmlns:html="http://www.w3.org/1999/xhtml" type="text/javascript">
+            //The id for tree cookie
+            var treeCookieId = "treeview-10666";
+            var language = "en";
+            var w = new Object();
+            //Localization
+            txt_filesfound = 'Results';
+            txt_enter_at_least_1_char = "You must enter at least one character.";
+            txt_browser_not_supported = "JavaScript is disabled on your browser. Please enable JavaScript to enjoy all the features of this site.";
+            txt_please_wait = "Please wait. Search in progress...";
+            txt_results_for = "Results for: ";
+        </script><link xmlns:html="http://www.w3.org/1999/xhtml" rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      <link xmlns:html="http://www.w3.org/1999/xhtml" rel="stylesheet" type="text/css" href="common/css/positioning.css" />
+      <link xmlns:html="http://www.w3.org/1999/xhtml" rel="stylesheet" type="text/css" href="common/jquery/theme-redmond/jquery-ui-1.8.2.custom.css" />
+      <link xmlns:html="http://www.w3.org/1999/xhtml" rel="stylesheet" type="text/css" href="common/jquery/treeview/jquery.treeview.css" /><style xmlns:html="http://www.w3.org/1999/xhtml" type="text/css">
+
+#noscript{
+    font-weight:bold;
+	background-color: #55AA55;
+    font-weight: bold;
+    height: 25spx;
+    z-index: 3000;
+	top:0px;
+	width:100%;
+	position: relative;
+	border-bottom: solid 5px black;
+	text-align:center;
+	color: white;
+}
+
+input {
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+.folder {
+    display: block;
+    height: 22px;
+    padding-left: 20px;
+    background: transparent url(common/jquery/treeview/images/folder.gif) 0 0px no-repeat;
+}
+span.contentsTab {
+    padding-left: 20px;
+    background: url(common/images/toc-icon.png) no-repeat 0 center;
+}
+span.searchTab {
+    padding-left: 20px;
+    background: url(common/images/search-icon.png) no-repeat 0 center;
+}
+
+/* Overide jquery treeview's defaults for ul. */
+.treeview ul {
+    background-color: transparent;
+    margin-top: 4px;
+}		
+#webhelp-currentid {
+    background-color: #D8D8D8 !important;
+}
+.treeview .hover { color: black; }
+.filetree li span a { text-decoration: none; font-size: 12px; color: #517291; }
+
+/* Override jquery-ui's default css customizations. These are supposed to take precedence over those.*/
+.ui-widget-content {
+    border: 0px; 
+    background: none; 
+    color: none;     
+}
+.ui-widget-header {
+    color: #e9e8e9;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #bbc4c5;
+    border-top: 4px solid #e5e5e5;
+    border: medium none;
+    background: #F4F4F4; /* old browsers */
+    background: -moz-linear-gradient(top, #F4F4F4 0%, #E6E4E5 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F4F4F4), color-stop(100%,#E6E4E5)); /* webkit */    
+    font-weight: none;
+}
+.ui-widget-header a { color: none; }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { 
+border: none; background: none; font-weight: none; color: none; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: black; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: none; background: none; font-weight: none; color: none; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: none; background: none; font-weight: none; color: none; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { 
+    color: black; text-decoration: none; 	
+    background: #C6C6C6; /* old browsers */
+    background: -moz-linear-gradient(top, #C6C6C6 0%, #D8D8D8 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C6C6C6), color-stop(100%,#D8D8D8)); /* webkit */
+    -webkit-border-radius:15px; -moz-border-radius:10px;
+    border: 1px solid #f1f1f1;
+}    
+.ui-corner-all { border-radius: 0 0 0 0; }
+
+.ui-tabs { padding: .2em;}
+.ui-tabs .ui-tabs-nav li { top: 0px; margin: -2px 0 1px; text-transform: uppercase; font-size: 10.5px;}
+.ui-tabs .ui-tabs-nav li a { padding: .25em 2em .25em 1em; margin: .5em; text-shadow: 0 1px 0 rgba(255,255,255,.5); }
+       /**
+	 *	Basic Layout Theme
+	 * 
+	 *	This theme uses the default layout class-names for all classes
+	 *	Add any 'custom class-names', from options: paneClass, resizerClass, togglerClass
+	 */
+
+	.ui-layout-pane { /* all 'panes' */ 
+		background: #FFF; 
+		border: 1px solid #BBB; 
+		padding: 05x; 
+		overflow: auto;
+	} 
+        
+	.ui-layout-resizer { /* all 'resizer-bars' */ 
+		background: #DDD; 
+                top:100px
+	} 
+
+	.ui-layout-toggler { /* all 'toggler-buttons' */ 
+		background: #AAA; 
+	} 
+    
+       </style>
+      <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="../common/css/ie.css"/>
+	<![endif]--><script xmlns:html="http://www.w3.org/1999/xhtml" type="text/javascript" src="common/browserDetect.js">
+         <!----></script><script xmlns:html="http://www.w3.org/1999/xhtml" type="text/javascript" src="common/jquery/jquery-1.7.2.min.js">
+         <!----></script><script xmlns:html="http://www.w3.org/1999/xhtml" type="text/javascript" src="common/jquery/jquery.ui.all.js">
+         <!----></script><script xmlns:html="http://www.w3.org/1999/xhtml" type="text/javascript" src="common/jquery/jquery.cookie.js">
+         <!----></script><script xmlns:html="http://www.w3.org/1999/xhtml" type="text/javascript" src="common/jquery/treeview/jquery.treeview.min.js">
+         <!----></script><script xmlns:html="http://www.w3.org/1999/xhtml" type="text/javascript" src="common/jquery/layout/jquery.layout.js">
+         <!----></script><style type="text/css">
+.ui-tabs .ui-tabs-nav li a { padding: .25em 0.5em .25em 0.5em; }
+
+.ui-layout-pane-east { overflow: hidden; }
+
+pre, tt, code { font-family: Consolas, monospace; font-size: 95%; }
+
+.programlisting { background-color: #F0F0F0; font-size: 95%; }
+
+#content { font-size: 12pt; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; overflow: auto; }
+#content h, #content h2, #content h3, #content h4 { font-family: inherit; }
+
+#container { margin-right: 150px; max-width: 50em; }
+#adsense { position: absolute; top: 99px; right: 20px; width: 160px; }
+
+p, ul, ol, li { font-size: inherit; font-family: inherit; }
+
+.status-draft { background-color: #FFFFAA; }
+p.status-draft, div.status-draft, h2.status-draft, h3.status-draft { border: solid 4px #FFFFAA; }
+
+/* Get rid of yellow background on the frontpage */
+.book.status-draft { background-color: white; border: none; }
+
+.status-final { background-color: white; }
+#aboutDiv .status-final { background-color: inherit; }
+
+.right { text-align: right; }
+
+.footercopy { font-size: 80%; 
+              background-color: red;
+              color: white;
+              padding: 0.5em;
+              }
+.footercopy .status-final { background-color: red; }
+
+.book .titlepage { text-align: center; }
+.book .titlepage .abstract { text-align: left; 
+                             margin-top: 3em; }
+
+.book .titlepage .copyright { display: none; }
+.book .titlepage .legalnotice { display: none; }
+.book .titlepage .abstract .title { display: none; }
+
+.comments { 
+  font-size: 80%;
+  background-color: #F0F0F0;
+  padding: 8px; 
+}
+</style><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19942807-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></head>
+   <body>
+      <noscript>
+         <div id="noscript">JavaScript is disabled on your browser. Please enable JavaScript to enjoy all the features of this site.</div>
+      </noscript>
+      <div xmlns:html="http://www.w3.org/1999/xhtml" id="header">
+         <div style="float: left;"><a href="index.html" border="0" title="Zpět na úvodní stránku"><img src="common/images/htmlguru.png" width="160" height="65" /></a></div>
+         <h1>HTML5<br />Základy tabulek
+         </h1>
+         <div id="navheader">
+            <!---->
+            <table class="navLinks">
+               <tr>
+                  <td><a id="showHideButton" href="#" onclick="myLayout.toggle('west')" class="pointLeft" tabindex="5" title="Hide TOC tree">Sidebar
+                                                    </a></td>
+                  <td><a accesskey="p" class="navLinkPrevious" tabindex="5" href="tabulky-bunka-barva.html">Předcházející</a>
+                                                             |
+                                                             <a accesskey="u" class="navLinkUp" tabindex="5" href="tabulky-zaklady.html">Nahoru</a>
+                                                         |
+                                                         <a accesskey="n" class="navLinkNext" tabindex="5" href="tabulky-rozsireny-model.html">Další</a></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div id="content">
+         <div id="container">
+            <!---->
+            <div class="section status-draft">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h3 class="title"><a id="tabulky-prazdne-bunky"></a>Pozor na prázdné buňky
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+               
+               
+               <a id="d6e1726" class="indexterm"></a>
+               
+               
+               <p>Při práci s tabulkami občas můžeme narazit na problémy. Jedním z nejčastějších problémů je pokažené formátování tabulky v případě,
+                  že
+                  obsah některé buňky je prázdný. Předpokládejme následující
+                  tabulku:
+               </p>
+               
+               <pre class="programlisting"><span class="hl-html" style="color: navy; font-weight: bold">&lt;table</span> <span class="hl-attribute" style="color: #F5844C">border</span>=<span class="hl-value" style="color: #993300">"1"</span><span class="hl-html" style="color: navy; font-weight: bold">&gt;</span>
+<span class="hl-html" style="color: navy; font-weight: bold">&lt;tr&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td&gt;</span>A<span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td&gt;</span>B<span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;/tr&gt;</span>
+<span class="hl-html" style="color: navy; font-weight: bold">&lt;tr&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td&gt;</span>C<span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;/tr&gt;</span>
+<span class="hl-html" style="color: navy; font-weight: bold">&lt;/table&gt;</span></pre>
+               
+               <div class="mediaobject"><img src="pic/05-tabulka-prazdna-bunka.png" /></div>
+               
+               <a id="d6e1735" class="indexterm"></a>
+               
+               
+               <p>Na místě prázdné buňky se ani nenakreslila mřížka. Pokud nám
+                  tento efekt připadá nežádoucí, můžeme jako obsah buňky uvést
+                  nedělitelnou mezeru <code class="literal">&amp;nbsp;</code>. Ta se nijak
+                  viditelně nezobrazí, ale buňka již nebude prázdná a nakreslí se
+                  okolo ní rámeček.
+               </p>
+               
+               <pre class="programlisting"><span class="hl-html" style="color: navy; font-weight: bold">&lt;table</span> <span class="hl-attribute" style="color: #F5844C">border</span>=<span class="hl-value" style="color: #993300">"1"</span><span class="hl-html" style="color: navy; font-weight: bold">&gt;</span>
+<span class="hl-html" style="color: navy; font-weight: bold">&lt;tr&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td&gt;</span>A<span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td&gt;</span>B<span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;/tr&gt;</span>
+<span class="hl-html" style="color: navy; font-weight: bold">&lt;tr&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td&gt;</span>C<span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td&gt;</span> <span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;/tr&gt;</span>
+<span class="hl-html" style="color: navy; font-weight: bold">&lt;/table&gt;</span></pre>
+               
+               <div class="mediaobject"><img src="pic/05-tabulka-prazdna-bunka2.png" /></div>
+               
+               <a id="d6e1744" class="indexterm"></a>
+               
+               
+               <p>Do podobných problémů se můžeme dostat, pokud nějakou buňku
+                  omylem vynecháme, zvláště pokud používáme jinou barvu pozadí pro
+                  tabulku a jinou pro buňky. Vynecháním druhé buňky v druhém řádku jsme
+                  tabulku pěkně pokazili:
+               </p>
+               
+               <pre class="programlisting"><span class="hl-html" style="color: navy; font-weight: bold">&lt;table</span> <span class="hl-attribute" style="color: #F5844C">bgcolor</span>=<span class="hl-value" style="color: #993300">"black"</span> <span class="hl-attribute" style="color: #F5844C">cellspacing</span>=<span class="hl-value" style="color: #993300">"1"</span><span class="hl-html" style="color: navy; font-weight: bold">&gt;</span>
+<span class="hl-html" style="color: navy; font-weight: bold">&lt;tr&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td</span> <span class="hl-attribute" style="color: #F5844C">bgcolor</span>=<span class="hl-value" style="color: #993300">"white"</span><span class="hl-html" style="color: navy; font-weight: bold">&gt;</span>A<span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td</span> <span class="hl-attribute" style="color: #F5844C">bgcolor</span>=<span class="hl-value" style="color: #993300">"white"</span><span class="hl-html" style="color: navy; font-weight: bold">&gt;</span>B<span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;/tr&gt;</span>
+<span class="hl-html" style="color: navy; font-weight: bold">&lt;tr&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;td</span> <span class="hl-attribute" style="color: #F5844C">bgcolor</span>=<span class="hl-value" style="color: #993300">"white"</span><span class="hl-html" style="color: navy; font-weight: bold">&gt;</span>C<span class="hl-html" style="color: navy; font-weight: bold">&lt;/td&gt;</span><span class="hl-html" style="color: navy; font-weight: bold">&lt;/tr&gt;</span>
+<span class="hl-html" style="color: navy; font-weight: bold">&lt;/table&gt;</span></pre>
+               
+               <div class="mediaobject"><img src="pic/05-tabulka-chybejici-bunka.png" /></div>
+               
+               
+            </div><script xmlns:html="http://www.w3.org/1999/xhtml" type="text/javascript" src="common/main.js">
+               <!----></script><script xmlns:html="http://www.w3.org/1999/xhtml" type="text/javascript" src="common/splitterInit.js">
+               <!----></script><div class="navfooter">
+               <hr />
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="tabulky-bunka-barva.html">Předcházející</a> 
+                     </td>
+                     <td width="20%" align="center"><a accesskey="u" href="tabulky-zaklady.html">Nahoru</a></td>
+                     <td width="40%" align="right"> <a accesskey="n" href="tabulky-rozsireny-model.html">Další</a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top"> </td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html">Domů</a></td>
+                     <td width="40%" align="right" valign="top"> </td>
+                  </tr>
+               </table>
+            </div>
+            <div align="center" class="footercopy">
+               
+               <p>Tento dokument je určen <span class="emphasis"><em>výhradně pro osobní
+                        potřebu</em></span> seznámení se s jazykem HTML a tvorbou webových
+                  stránek. Jakékoliv jiné použití, včetně dalšího šíření, pořizování
+                  kopií, použití při školeních a výuce apod. je výslovně zakázáno a bude
+                  považováno za porušení autorských práv.
+               </p>
+               <br /><b>Copyright © 1997–2014 Jiří Kosek</b></div>
+            <div class="comments">
+               <div id="disqus_thread"></div><script type="text/javascript">
+    var disqus_shortname = 'htmlguru-cz';
+    disqus_identifier = '/tabulky-prazdne-bunky.html';
+    disqus_url = 'http://htmlguru.cz/tabulky-prazdne-bunky.html';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a></div>
+         </div>
+      </div>
+      <div xmlns:html="http://www.w3.org/1999/xhtml" id="sidebar">
+         <div id="leftnavigation" style="padding-top:3px;">
+            <div id="tabs">
+               <ul>
+                  <li><a href="#treeDiv" style="outline:0;" tabindex="1"><span class="contentsTab">Contents</span></a></li>
+                  <li><a href="#aboutDiv"><em>O projektu</em></a></li>
+                  <li><a href="#searchDiv"><em>Hledání</em></a></li>
+               </ul>
+               <div id="treeDiv"><img src="common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;" /><div id="ulTreeDiv" style="display:none">
+                     <ul id="tree" class="filetree">
+                        <li><span class="file"><a href="uvod.html" tabindex="1">Úvod</a></span><ul>
+                              <li><span class="file"><a href="uvod-co-potrebujme.html" tabindex="1">Co potřebujeme pro tvorbu vlastních stránek</a></span></li>
+                              <li><span class="file"><a href="uvod-historie.html" tabindex="1">Historie a vývoj HTML</a></span></li>
+                           </ul>
+                        </li>
+                        <li><span class="file"><a href="zaklady.html" tabindex="1">Základy HTML</a></span><ul>
+                              <li><span class="file"><a href="zaklady-prvni-stranka.html" tabindex="1">Naše první stránka</a></span><ul>
+                                    <li><span class="file"><a href="zaklady-kostra.html" tabindex="1">Správná kostra</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="zaklady-cleneni-dokumentu.html" tabindex="1">Základní členění dokumentu</a></span></li>
+                              <li><span class="file"><a href="zaklady-zmena-pisma.html" tabindex="1">Měníme typy písma</a></span></li>
+                              <li><span class="file"><a href="zaklady-odkazy.html" tabindex="1">Odkazy</a></span><ul>
+                                    <li><span class="file"><a href="zaklady-url-adresy.html" tabindex="1">Pás slov o URL adresách</a></span></li>
+                                    <li><span class="file"><a href="zaklady-vlozeni-odkazu.html" tabindex="1">Vložení odkazu</a></span></li>
+                                    <li><span class="file"><a href="zaklady-atributy.html" tabindex="1">Malá odbočka k atributům</a></span></li>
+                                    <li><span class="file"><a href="zaklady-specialni-znaky.html" tabindex="1">Zápis speciálních znaků</a></span></li>
+                                    <li><span class="file"><a href="zaklady-relativni-odkazy.html" tabindex="1">Relativní odkazy</a></span></li>
+                                    <li><span class="file"><a href="zaklady-odkaz-na-misto.html" tabindex="1">Odkaz na určité místo dokumentu</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="zaklady-seznamy.html" tabindex="1">Seznamy</a></span></li>
+                              <li><span class="file"><a href="zaklady-obrazky.html" tabindex="1">Obrázky</a></span></li>
+                              <li><span class="file"><a href="zaklady-pre.html" tabindex="1">Předformátovaný text</a></span></li>
+                              <li><span class="file"><a href="zaklady-citace.html" tabindex="1">Začleňování citátů</a></span></li>
+                              <li><span class="file"><a href="zaklady-adresa.html" tabindex="1">Podpisy stránek</a></span></li>
+                              <li><span class="file"><a href="zaklady-komentare.html" tabindex="1">Komentáře</a></span></li>
+                           </ul>
+                        </li>
+                        <li><span class="file"><a href="vystaveni.html" tabindex="1">Zpřístupnění stránek světu</a></span><ul>
+                              <li><span class="file"><a href="vystaveni-webovy-server.html" tabindex="1">Webový server</a></span></li>
+                              <li><span class="file"><a href="vystaveni-umisteni-stranek-na-server.html" tabindex="1">Umístění stránek na server</a></span><ul>
+                                    <li><span class="file"><a href="vystaveni-umisteni-stranek-na-server-priprava.html" tabindex="1">Jak připravit stránky pro umístění na webový server</a></span><ul>
+                                          <li><span class="file"><a href="vystaveni-umisteni-stranek-na-server-priprava.html#vystaveni-umisteni-stranek-na-server-soubory" tabindex="1">Pořádek v souborech především</a></span></li>
+                                          <li><span class="file"><a href="vystaveni-umisteni-stranek-na-server-priprava.html#vystaveni-umisteni-stranek-na-server-relativni-odkazy" tabindex="1">Používejte relativní odkazy</a></span></li>
+                                          <li><span class="file"><a href="vystaveni-umisteni-stranek-na-server-priprava.html#vystaveni-umisteni-stranek-na-server-jmena-souboru" tabindex="1">Jména souborů – krátká, výstižná a bez diakritiky</a></span></li>
+                                          <li><span class="file"><a href="vystaveni-umisteni-stranek-na-server-priprava.html#vystaveni-umisteni-stranek-na-server-index" tabindex="1">Správné jméno pro úvodní stránku</a></span></li>
+                                          <li><span class="file"><a href="vystaveni-umisteni-stranek-na-server-priprava.html#vystaveni-umisteni-stranek-na-server-lomitka" tabindex="1">Web ≠ Windows + Microsoft + Internet Explorer</a></span></li>
+                                       </ul>
+                                    </li>
+                                    <li><span class="file"><a href="vystaveni-prenos-dat.html" tabindex="1">Možnosti přenosu stránek webový server</a></span><ul>
+                                          <li><span class="file"><a href="vystaveni-prenos-dat.html#vystaveni-prenos-dat-ftp" tabindex="1">FTP</a></span></li>
+                                          <li><span class="file"><a href="vystaveni-prenos-dat.html#vystaveni-prenos-dat-ftps" tabindex="1">FTPS – bezpečné FTP</a></span></li>
+                                          <li><span class="file"><a href="vystaveni-prenos-dat.html#vystaveni-prenos-dat-scp" tabindex="1">SCP aneb bezpečné kopírování</a></span></li>
+                                          <li><span class="file"><a href="vystaveni-prenos-dat.html#vystaveni-prenos-dat-webdav" tabindex="1">WebDAV – budoucnost?</a></span></li>
+                                          <li><span class="file"><a href="vystaveni-prenos-dat.html#vystaveni-prenos-dat-dalsi-moznosti" tabindex="1">Další možnosti</a></span></li>
+                                       </ul>
+                                    </li>
+                                    <li><span class="file"><a href="vystaveni-druhy-hostingu.html" tabindex="1">Stránky ve škole, v práci a na vlastním webovém serveru</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="vystaveni-jak-byt-videt.html" tabindex="1">Vědět, jak být viděn</a></span><ul>
+                                    <li><span class="file"><a href="vystaveni-adresarove-sluzby.html" tabindex="1">Adresářové služby</a></span></li>
+                                    <li><span class="file"><a href="vystaveni-vyhledavace.html" tabindex="1">Seznamy a vyhledávací servery</a></span></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                        <li><span class="file"><a href="tabulky.html" tabindex="1">Tabulky</a></span><ul>
+                              <li><span class="file"><a href="tabulky-zaklady.html" tabindex="1">Základy tabulek</a></span><ul>
+                                    <li><span class="file"><a href="tabulky-bunka-zarovnani-horizontalni.html" tabindex="1">Horizontální zarovnání</a></span></li>
+                                    <li><span class="file"><a href="tabulky-bunka-zarovnani-vertikalni.html" tabindex="1">Vertikální zarovnání</a></span></li>
+                                    <li><span class="file"><a href="tabulky-slouceni-bunek.html" tabindex="1">Slučování buněk</a></span></li>
+                                    <li><span class="file"><a href="tabulky-bunka-velikost.html" tabindex="1">Velikost buňky</a></span></li>
+                                    <li><span class="file"><a href="tabulky-atributy.html" tabindex="1">Atributy elementu table</a></span></li>
+                                    <li><span class="file"><a href="tabulky-nadpis.html" tabindex="1">Nadpis tabulky</a></span></li>
+                                    <li><span class="file"><a href="tabulky-bunka-barva.html" tabindex="1">Barva buněk</a></span></li>
+                                    <li id="webhelp-currentid"><span class="file"><a href="tabulky-prazdne-bunky.html" tabindex="1">Pozor na prázdné buňky</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="tabulky-rozsireny-model.html" tabindex="1">Rozšířený model tabulek</a></span><ul>
+                                    <li><span class="file"><a href="tabulky-skupiny-radek.html" tabindex="1">Skupiny řádek</a></span></li>
+                                    <li><span class="file"><a href="tabulky-skupiny-sloupcu.html" tabindex="1">Skupiny sloupců</a></span></li>
+                                    <li><span class="file"><a href="tabulky-bunka-oznaceni.html" tabindex="1">Označování buněk tabulky</a></span></li>
+                                    <li><span class="file"><a href="tabulky-bunka-zarovnani.html" tabindex="1">Zarovnání buňky na desetinnou čárku</a></span></li>
+                                    <li><span class="file"><a href="tabulky-ramecek-mrizka.html" tabindex="1">Rámeček a mřížka</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="tabulky-pouziti.html" tabindex="1">Praktické použití tabulek</a></span><ul>
+                                    <li><span class="file"><a href="tabulky-pouziti-stejne-sloupce.html" tabindex="1">Stejně široké sloupečky</a></span></li>
+                                    <li><span class="file"><a href="tabulky-pouziti-vice-sloupcu.html" tabindex="1">Text do více sloupečků</a></span></li>
+                                    <li><span class="file"><a href="tabulky-priklad.html" tabindex="1">Komplexní tabulka</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="tabulky-prakticky.html" tabindex="1">Praktické zneužití tabulek</a></span><ul>
+                                    <li><span class="file"><a href="tabulky-prakticky-odrazky.html" tabindex="1">Seznamy s grafickými odrážkami</a></span></li>
+                                    <li><span class="file"><a href="tabulky-prakticky-ramy.html" tabindex="1">Frame-like design</a></span></li>
+                                    <li><span class="file"><a href="tabulky-prakticky-layout.html" tabindex="1">Layout stránky pod palcem</a></span></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                        <li><span class="file"><a href="ramy.html" tabindex="1">Rámy</a></span><ul>
+                              <li><span class="file"><a href="ramy-rozlozeni.html" tabindex="1">Rozložení rámů na stránce</a></span></li>
+                              <li><span class="file"><a href="ramy-obsah.html" tabindex="1">Definice obsahu rámu</a></span></li>
+                              <li><span class="file"><a href="ramy-urceni-cile.html" tabindex="1">Určení cílového rámu</a></span></li>
+                              <li><span class="file"><a href="ramy-alternativa.html" tabindex="1">Alternativa pro prohlížeče bez podpory rámů</a></span></li>
+                              <li><span class="file"><a href="ramy-problemy.html" tabindex="1">Problémy rámů</a></span></li>
+                              <li><span class="file"><a href="ramy-inline.html" tabindex="1">Inline rámy</a></span></li>
+                           </ul>
+                        </li>
+                        <li><span class="file"><a href="css.html" tabindex="1">Kaskádové styly dokumentů</a></span><ul>
+                              <li><span class="file"><a href="css-ukazka.html" tabindex="1">Motivační ukázka</a></span></li>
+                              <li><span class="file"><a href="css-pripojeni.html" tabindex="1">Připojení stylu k HTML dokumentu</a></span><ul>
+                                    <li><span class="file"><a href="css-pripojeni-externi.html" tabindex="1">Styl v externím souboru</a></span></li>
+                                    <li><span class="file"><a href="css-pripojeni-ve-strance.html" tabindex="1">Styl zapsaný přímo v HTML stránce</a></span></li>
+                                    <li><span class="file"><a href="css-pripojeni-inline.html" tabindex="1">Deklarace stylu přímo u elementu</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="css-selektory.html" tabindex="1">Selektory</a></span><ul>
+                                    <li><span class="file"><a href="css-selektor-typ.html" tabindex="1">Výběr elementu podle jména</a></span></li>
+                                    <li><span class="file"><a href="css-selektor-trida.html" tabindex="1">Třída jako selektor</a></span></li>
+                                    <li><span class="file"><a href="css-selektor-id.html" tabindex="1">Identifikátor elementu jako selektor</a></span></li>
+                                    <li><span class="file"><a href="css-selektor-potomku.html" tabindex="1">Selektor potomků</a></span></li>
+                                    <li><span class="file"><a href="css-selektor-deti.html" tabindex="1">Selektor dětí</a></span></li>
+                                    <li><span class="file"><a href="css-selektor-sousedicich-sourozencu.html" tabindex="1">Selektor sousedících sourozenců</a></span></li>
+                                    <li><span class="file"><a href="css-selektor-univerzalni.html" tabindex="1">Univerzální selektor</a></span></li>
+                                    <li><span class="file"><a href="css-selektor-pseudoelement.html" tabindex="1">Pseudoelementy</a></span></li>
+                                    <li><span class="file"><a href="css-selektor-pseudotrida.html" tabindex="1">Pseudotřídy</a></span><ul>
+                                          <li><span class="file"><a href="css-selektor-pseudotrida.html#css-selektor-pseudotrida-dynamicka" tabindex="1">Dynamické pseudotřídy</a></span></li>
+                                       </ul>
+                                    </li>
+                                    <li><span class="file"><a href="css-selektor-atributovy.html" tabindex="1">Atributový selektor</a></span></li>
+                                    <li><span class="file"><a href="css-skladani.html" tabindex="1">Skládání stylů</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="css-pravidla.html" tabindex="1">FIXME</a></span><ul>
+                                    <li><span class="file"><a href="css-slucovani-deklaraci.html" tabindex="1">Slučování pravidel a deklarací</a></span></li>
+                                    <li><span class="file"><a href="css-vlastnosti-dedeni.html" tabindex="1">Dědění vlastností</a></span></li>
+                                    <li><span class="file"><a href="css-komentare.html" tabindex="1">Komentáře</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="css-vlastnosti.html" tabindex="1">Vlastnosti</a></span><ul>
+                                    <li><span class="file"><a href="css-vlastnosti-pismo.html" tabindex="1">Písmo</a></span></li>
+                                    <li><span class="file"><a href="css-vlastnosti-barva-pozadi.html" tabindex="1">Barva a pozadí</a></span></li>
+                                    <li><span class="file"><a href="css-vlastnosti-text.html" tabindex="1">Text</a></span></li>
+                                    <li><span class="file"><a href="css-vlastnosti-formatovani.html" tabindex="1">Formátování</a></span></li>
+                                    <li><span class="file"><a href="css-vlastnosti-druhy-elementu.html" tabindex="1">Klasifikace elementů</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="css-praxe.html" tabindex="1">Styly v praxi</a></span></li>
+                              <li><span class="file"><a href="css-layout.html" tabindex="1">Layout stránky</a></span></li>
+                              <li><span class="file"><a href="css-generovany-obsah.html" tabindex="1">Generovaný obsah</a></span></li>
+                              <li><span class="file"><a href="css-media.html" tabindex="1">Podpora více výstupních zařízení</a></span><ul>
+                                    <li><span class="file"><a href="css-media-tisk.html" tabindex="1">Styl pro tisk</a></span></li>
+                                    <li><span class="file"><a href="css-media-queries.html" tabindex="1">Media Queries</a></span></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                        <li><span class="file"><a href="design.html" tabindex="1">Design stránek</a></span><ul>
+                              <li><span class="file"><a href="design-grafika.html" tabindex="1">Grafický design</a></span><ul>
+                                    <li><span class="file"><a href="design-grafika-barvy.html" tabindex="1">Barvy a pozadí</a></span></li>
+                                    <li><span class="file"><a href="design-grafika-pismo.html" tabindex="1">Výběr písma</a></span></li>
+                                    <li><span class="file"><a href="design-grafika-zvyrazneni.html" tabindex="1">Zvýrazňování textu</a></span></li>
+                                    <li><span class="file"><a href="design-grafika-typografie.html" tabindex="1">Základní typografická pravidla</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="design-organizace.html" tabindex="1">Organizace informací</a></span><ul>
+                                    <li><span class="file"><a href="design-organizace-struktura.html" tabindex="1">Struktura stránek</a></span></li>
+                                    <li><span class="file"><a href="design-organizace-delka.html" tabindex="1">Délka stránek</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="design-odkazy.html" tabindex="1">Odkazy</a></span><ul>
+                                    <li><span class="file"><a href="design-odkazy-zde.html" tabindex="1">Klikněte zde</a></span></li>
+                                    <li><span class="file"><a href="design-odkazy-abs-vs-rel.html" tabindex="1">Relativní vs. absolutní odkazy</a></span></li>
+                                    <li><span class="file"><a href="design-odkazy-vs-kopie.html" tabindex="1">Odkazy nebo kopie</a></span></li>
+                                 </ul>
+                              </li>
+                              <li><span class="file"><a href="design-dokument.html" tabindex="1">Dokument</a></span></li>
+                           </ul>
+                        </li>
+                        <li><span class="file"><a href="css-props.html" tabindex="1">Přehled vlastností CSS</a></span></li>
+                        <li><span class="file"><a href="zdroje.html" tabindex="1">Další zdroje informací</a></span></li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="aboutDiv"></div>
+               <div id="searchDiv">
+                  <div id="cse" style="width: 100%;">Loading</div><script src="http://www.google.com/jsapi" type="text/javascript"></script><script type="text/javascript">
+  google.load('search', '1', {language : 'cs'});
+  google.setOnLoadCallback(function() {
+    var customSearchControl = new google.search.CustomSearchControl('009172105620809471600:4bltaw4kxho');
+    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+    customSearchControl.setLinkTarget(google.search.Search.LINK_TARGET_TOP);
+    customSearchControl.draw('cse');
+  }, true);
+</script></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
